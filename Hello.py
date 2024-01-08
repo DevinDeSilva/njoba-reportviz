@@ -20,13 +20,13 @@ LOGGER = get_logger(__name__)
 
 def run():
     st.set_page_config(
-        page_title="Hello",
+        page_title="Landing Page",
         page_icon="👋",
     )
 
-    st.write("# Welcome to Streamlit! 👋")
+    st.write("# Welcome to Report Vizualizater")
 
-    st.sidebar.success("Select a demo above.")
+    st.sidebar.success("Select Vizualization")
 
     st.markdown(
         """
@@ -43,6 +43,17 @@ def run():
         - Use a neural net to [analyze the Udacity Self-driving Car Image
           Dataset](https://github.com/streamlit/demo-self-driving)
         - Explore a [New York City rideshare dataset](https://github.com/streamlit/demo-uber-nyc-pickups)
+    """
+    )
+
+    st.markdown(
+        """
+        Welcome to NJOBA - ReportViz.
+
+        Please upload New database dump using the upload file page if you have data, 
+        as this process will update the vizualizations
+
+        select different visualizations for different sets of data insights.
     """
     )
 
